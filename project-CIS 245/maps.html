@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+</head>
+<body id="body">
+        <div class="container-fluid" >
+            <nav class="navbar navbar-expand-lg navbar-inverse navbar-fixed-top navbar-dark bg-danger width:device-width">
+                <a class="navbar-brand" href="index.html" class="nav-item mr-auto active h3 text-white">
+                    Intermediate Web Programming (CIS 245)
+                </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+        <span class="sr-only">Toggle navigation</span>
+        
+        </button>  
+        <div class="container">            
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">    
+                        <ul class="navbar-nav ml-auto ">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="index.html">Home <span
+                                        class="sr-only sr-only-focusable">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="geolocation.html">Submission</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="maps.html">Maps</a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="about.html">About</a>
+                            </li>
+                        </ul>
+            </div>
+        </div>
+    </nav><br>
+    <div class="container">
+        <div class="border-left">
+            <p class="h5">
+                    Using Geolocation<br></p>
+                    -<mark>HTML5</mark> <br>
+                </div>
+                <br><Br>
+        <div class="row">
+            <div class="col-6">
+                <table class="table text-center text-white" id="table">
+                        <thead class="bg-info">
+                            <th>Latitude</th>
+                            <th>Longitude</th>
+                        </thead> 
+                    </table>
+        </div>
+        <div class="col-6">
+                <div id="maps" style="width:100%;height:400px;"></div>
+        </div>
+        </div>  
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <!--Link to Javascript local file -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBF5ptqbGzBPlyRTmQxXt4hT5mHbZGR3c8" ></script>
+    <script src="js/maps.js"></script>
+
+</body>
+</html>
